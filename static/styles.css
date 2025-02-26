@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: antiquewhite; 
+    color: #3E3E3E;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-family: 'Comic Sans MS', sans-serif;
+    text-align: center;
+    color: #f05b4e; 
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFB6C1; 
+    font-weight: bold;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+
+}
+
+a:hover {
+    color: #FF6F61; 
+}
+
+.caixa-receitas {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px; 
+    margin: 20px auto; 
+    max-width: 800px; 
+    background-color: #fff; 
+    border-radius: 8px; 
+    border: 1px solid #FF7043;
+}
+
+
+.receitas table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.receitas th, .receitas td {
+    border: 1px solid #FF7043;
+    padding: 10px;
+    text-align: left;
+}
+
+.receitas th {
+    background-color: white; 
+    color:#FF6F61
+}
+
+form {
+    background-color: #FFF8E1;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+    color: #FF7043;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #FF7043;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #FF6F61;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #FF3D2E; }
+
+
+footer {
+    text-align: center;
+    margin-top: 400px;
+    font-size: 14px;
+    color: #FF7043;
+    background-color: #fff;
+    padding: 10px;
+}
+
+

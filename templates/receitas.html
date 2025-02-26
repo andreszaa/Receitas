@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial_scale=1.0">
+    <title>Receitas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Publicar Nova Receita</h1>
+    
+        <form action="{{ url_for('adicionar_receita') }}" method="POST">
+
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required><br><br>
+        
+        <label for="ingredientes">Ingredientes:</label><br>
+        <textarea id="ingredientes" name="ingredientes" required></textarea><br><br>
+        
+        <label for="modo_preparo">Modo de Preparo:</label><br>
+        <textarea id="modo_de_preparo" name="modo_de_preparo" required></textarea><br><br>
+        
+        <button type="submit">Publicar Receita</button>
+    </form>
+
+    <br>
+    <a href="{{ url_for('index') }}">Voltar para a lista de receitas</a>
+
+
+    <footer class="rodape">
+        <p>&copy;2025. Site de Receitas deliciosas</p>
+    </footer>
+</body>
+</html>
+
+                   
+
+
+   

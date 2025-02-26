@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial_scale=1.0">
+    <title>Página inicial</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Site de Receitas</h1>
+
+    <a href="{{ url_for('adicionar_receita') }}">Publicar uma nova receita</a>
+
+    <h2>Receitas Publicadas:</h2>
+    <div class="caixa-receitas">
+        <div class="receitas">
+            <table>
+                <tr>
+                    <th>Título:</th>
+                    <th>Ingredientes:</th>
+                    <th>Modo de Preparo:</th>
+                </tr>
+                {% for receita in receitas %}
+                <tr>
+                    <td>{{ receita[1] }}</td>  
+                    <td>{{ receita[2] }}</td>  
+                    <td>{{ receita[3] }}</td>  
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>      
+<footer class="rodape">
+    <p>&copy; 2025. Site de Receitas deliciosas</p>
+</footer>
+
+</body>
+</html>   
